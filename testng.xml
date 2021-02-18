@@ -8,7 +8,8 @@
             </run>
         </groups>
         <classes>
-            <class name="TestNGHelloWorld"/>
+<!--            <class name="TestNGHelloWorld"/>-->
+            <class name="BMW"/>
         </classes>
     </test> <!-- TestNG -->
 </suite> <!-- Default Suite -->

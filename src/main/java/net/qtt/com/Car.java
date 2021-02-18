@@ -1,0 +1,19 @@
+import org.testng.annotations.*;
+
+@Test(groups = "Tomandy")
+public class Car {
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("car beforeClass");
+    }
+
+    @Test
+    public void carTest() {
+        System.out.println("Car Test");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("Car afterClass");
+    }
+}
