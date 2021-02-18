@@ -8,8 +8,17 @@
             </run>
         </groups>
         <classes>
-<!--            <class name="TestNGHelloWorld"/>-->
-            <class name="BMW"/>
+            <class name="net.qtt.com.BMW"/>
         </classes>
     </test> <!-- TestNG -->
+    <test verbose="2" name="TestNG2">
+        <classes>
+            <class name="net.qtt.com.TestNGHelloWorld">
+                <methods>
+                    <include name="helloWorld"/>
+                    <include name="helloWorld2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite> <!-- Default Suite -->

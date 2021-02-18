@@ -1,3 +1,5 @@
+package net.qtt.com;
+
 import org.testng.annotations.*;
 
 @Test(groups = "Tomandy")
@@ -9,11 +11,11 @@ public class Car {
 
     @Test
     public void carTest() {
-        System.out.println("Car Test");
+        System.out.println("net.qtt.com.Car Test");
     }
 
     @AfterClass
     public void afterClass() {
-        System.out.println("Car afterClass");
+        System.out.println("net.qtt.com.Car afterClass");
     }
 }

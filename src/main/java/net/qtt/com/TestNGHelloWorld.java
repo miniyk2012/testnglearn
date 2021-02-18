@@ -1,20 +1,22 @@
+package net.qtt.com;
+
 import org.testng.annotations.*;
 
 @Test(groups = "Tomandy")
 public class TestNGHelloWorld {
     @BeforeSuite(groups = "bfSuite")
     public void bfSuite() {
-        System.out.println("TestNGHelloWorld BeforeSuite!");
+        System.out.println("net.qtt.com.TestNGHelloWorld BeforeSuite!");
     }
 
     @BeforeClass(enabled = false)  //不可执行
     public void bfClass() {
-        System.out.println("TestNGHelloWorld BeforeClass!");
+        System.out.println("net.qtt.com.TestNGHelloWorld BeforeClass!");
     }
 
     @BeforeTest(dependsOnGroups = "bfSuite")  //依赖bfSuite组
     public void bfTest() {
-        System.out.println("TestNGHelloWorld BeforeTest!");
+        System.out.println("net.qtt.com.TestNGHelloWorld BeforeTest!");
     }
 
 
@@ -34,7 +36,7 @@ public class TestNGHelloWorld {
 
     @BeforeMethod(alwaysRun = true, dependsOnGroups = "bfSuite") //依赖bfSuite组,alwaysRun
     public void bfMethod() {
-        System.out.println("TestNGHelloWorld BeforeMethod!");
+        System.out.println("net.qtt.com.TestNGHelloWorld BeforeMethod!");
     }
 
     @AfterClass
@@ -44,12 +46,12 @@ public class TestNGHelloWorld {
 
     @AfterSuite
     public void afSuite() {
-        System.out.println("TestNGHelloWorld AfterSuite!");
+        System.out.println("net.qtt.com.TestNGHelloWorld AfterSuite!");
     }
 
     @AfterMethod
     public void afMethod(){
-        System.out.println("TestNGHelloWorld AfterMethod!");
+        System.out.println("net.qtt.com.TestNGHelloWorld AfterMethod!");
     }
 
 }
