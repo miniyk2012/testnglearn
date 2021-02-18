@@ -39,7 +39,7 @@ public class TestNGHelloWorld2 {
         System.out.println("TestNGHelloWorld2 Test5!");
     }
 
-    @Test(threadPoolSize = 3, invocationCount = 10, successPercentage = 9)
+    @Test(threadPoolSize = 3, invocationCount = 10, successPercentage = 9, enabled=false)
     public void helloWorldTest6() throws InterruptedException {
         Thread.sleep(1000);
         System.out.println("TestNGHelloWorld2 Test!6");

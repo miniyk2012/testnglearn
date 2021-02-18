@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" data-provider-thread-count="2">
     <test verbose="2" preserve-order="true" name="TestNG">
         <groups>
             <run>
@@ -40,9 +40,16 @@
     </test>
     <test verbose="2" name="TESTNG5">
         <parameter name="para" value="Tomandy"/>
+        <parameter name="other_para" value="YK"></parameter>
         <packages>
             <package name="net.qtt.com.params"></package>
         </packages>
+    </test>
+    <test verbose="2" name="TESTNG6" group-by-instances="true">
+        <classes>
+            <class name="net.qtt.com.factory.TestFactory">
+            </class>
+        </classes>
     </test>
     
 </suite> <!-- Default Suite -->
