@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="net.qtt.com.transform.Transform"/>
+        <listener class-name="net.qtt.com.transform.Transform2"/>
     </listeners>
     <test name="test_failure" verbose="2" preserve-order="true">
         <classes>
-            <class name="net.qtt.com.transform.TestTransform"></class>
+            <class name="net.qtt.com.transform.TransformFactory"></class>
         </classes>
     </test>
 </suite>

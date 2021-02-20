@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <listeners>
-        <listener class-name="net.qtt.com.transform.Transform"/>
-    </listeners>
     <test name="test_failure" verbose="2" preserve-order="true">
         <classes>
-            <class name="net.qtt.com.transform.TestTransform"></class>
+            <class name="net.qtt.com.interceptor.SampleTest"></class>
         </classes>
     </test>
 </suite>
