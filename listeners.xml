@@ -11,4 +11,16 @@
             <class name="net.qtt.com.listeners.iinvokedmethodlistener.IInvokedMethodListenerImpTest"></class>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="net.qtt.com.listeners.ireporter.IReporterImp"/>
+    </listeners>
+
+    <parameter name="tom" value="Tomandy"/>
+
+    <test verbose="2" preserve-order="true" name="test_ireporter">
+        <classes>
+            <class name="net.qtt.com.listeners.ireporter.TestNGHelloWorld1">
+            </class>
+        </classes>
+    </test>
 </suite>

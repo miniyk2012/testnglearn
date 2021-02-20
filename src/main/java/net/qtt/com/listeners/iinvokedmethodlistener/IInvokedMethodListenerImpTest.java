@@ -10,7 +10,12 @@ public class IInvokedMethodListenerImpTest {
     }
 
     @Test
-    public void test(){
+    public void test1(){
         System.out.println("test123");
+    }
+
+    @Test
+    public void test2(){
+        System.out.println("test321");
     }
 }
