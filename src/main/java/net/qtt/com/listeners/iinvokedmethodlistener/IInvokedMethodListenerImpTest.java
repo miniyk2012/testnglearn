@@ -1,8 +1,8 @@
 package net.qtt.com.listeners.iinvokedmethodlistener;
+import net.qtt.com.listeners.DisableListener;
 import org.testng.annotations.*;
-import org.testng.annotations.Listeners;
 
-@Listeners(IInvokedMethodListenerImp.class)
+@DisableListener
 public class IInvokedMethodListenerImpTest {
     @BeforeClass
     public void bfClass(){

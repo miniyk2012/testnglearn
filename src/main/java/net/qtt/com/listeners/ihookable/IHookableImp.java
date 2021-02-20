@@ -10,5 +10,6 @@ public class IHookableImp implements IHookable {
     public void run(IHookCallBack callBack, ITestResult testResult) {
         System.out.println("tom");
         callBack.runTestMethod(testResult);
+        System.out.println("bom");
     }
 }

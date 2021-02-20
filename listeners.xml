@@ -13,6 +13,10 @@
     </test>
     <listeners>
         <listener class-name="net.qtt.com.listeners.ireporter.IReporterImp"/>
+        <listener class-name="net.qtt.com.listeners.iinvokedmethodlistener.IInvokedMethodListenerImp"/>
+        <listener class-name="net.qtt.com.listeners.isuitelistener.MyISuiteListenerImp"/>
+        <listener class-name="net.qtt.com.listeners.testlisteneradapter.TestListenerAdapterImp"/>
+        <listener class-name="net.qtt.com.listeners.interceptor.MyInterceptor"/>
     </listeners>
 
     <parameter name="tom" value="Tomandy"/>
