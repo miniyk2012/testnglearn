@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Listeners Test Suite" parallel="classes" thread-count="5" >
+    <test name="test_ihookable" verbose="2">
+        <classes>
+            <class name="net.qtt.com.listeners.ihookable.IHookableImpTest"></class>
+        </classes>
+    </test>
+    <test name="test_iinvokedmethodlistener" verbose="2">
+        <classes>
+            <class name="net.qtt.com.listeners.iinvokedmethodlistener.IInvokedMethodListenerImpTest"></class>
+        </classes>
+    </test>
+</suite>

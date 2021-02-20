@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.lang.reflect.Method;
 import java.util.*;
 
-public class OSFilter implements IMethodInterceptor {
+public class OSFilterInterceptor implements IMethodInterceptor {
     public static int totalIgnored = 0;
     public static int totalRun = 0;
     public static int totalConfigured = 0;

@@ -3,7 +3,7 @@ package net.qtt.com.interceptor;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({ OSFilter.class, ProgressTracker.class })
+@Listeners({ OSFilterInterceptor.class, ProgressTracker.class })
 public class SampleTest {
 
     @Test(groups = { OSNames.OS_LINUX })
