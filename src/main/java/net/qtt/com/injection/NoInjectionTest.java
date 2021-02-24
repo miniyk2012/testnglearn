@@ -18,7 +18,7 @@ public class NoInjectionTest {
         System.out.println("withoutInjection");
         Assert.assertEquals(m.getName(), "f");
     }
-
+    
     @Test(dataProvider = "provider")
     public void withInjection(Method m, Method m2) {
         System.out.println("withInjection");
